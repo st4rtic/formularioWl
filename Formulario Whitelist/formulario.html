@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Whitelist Derik RP</h1>
+            <p id="subtitulo">Complete suas informações para poder participar de nosso servidor!</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>O que é Dark RP?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="A" checked>Fazer um RP de ações
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="B">Fazer um rp baseado em ofenssas 
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="C">Abusar das fisícas do jogo
+                </label>
+            </div>
+
+            <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+            <div class="campo">
+                <label for="Idade"><strong>idade</strong></label>
+                <select id="idade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>-18</option>
+                  <option>+18</option>
+                  <option>+28</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>Onde tiro minhas duvidas:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1"> discord</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2"> Site</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3"> Jogo</label>
+                    
+                </div>
+            </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais sobre seu personagem </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+
+            </div>
+
+            <div class="campo">
+                <label for="Idade"><strong>O que deseja fazer no servidor?</strong></label>
+                <select id="idade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Policia</option>
+                  <option>Ilegal</option>
+                  <option>Samu</option>
+                  <option>Mecanica</option>
+                </select>
+            </div>
+            
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Enviar</button>            
+
+        </form>
+
+    </body>
+
+</html>
+
+
+
+
